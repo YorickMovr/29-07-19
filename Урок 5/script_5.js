@@ -1,7 +1,15 @@
-function getOperand(operandIndex){
-    let operand = +prompt('operand ' + operandIndex, "2")
+// function progresion(value){
+//     let progresionResult = 0;
+//     for(let i=value; i>0;i--){
+//         progresionResult +=i;
+//     }
 
-    return isNaN(operand) ? getOperand(operandIndex) : operand;
+// }
+
+
+function progresion(value){
+    return value == 1? value : value + progresion(value-1)
 }
 
-getOperand(1);
+const result = progresion(5);//15
+console.log(result);
