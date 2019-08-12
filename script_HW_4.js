@@ -5,6 +5,7 @@ alert('Hello! Here you can use our calculator');
 let operator;
 let operand1;
 let operand2;
+let result;
 
 do {
     operator = prompt('Choose operator', 'add');
@@ -25,29 +26,32 @@ do{
 
 
 switch(operator){
-    case 'add': addition();break;
-    case 'sub': subtraction(); break;
-    case 'mult': multiplication();break;
-    case 'div': division(); break;
+    case 'add': addition(operand1,operand2);break;
+    case 'sub': subtraction(operand1,operand2); break;
+    case 'mult': multiplication(operand1,operand2);break;
+    case 'div': division(operand1,operand2); break;
+    case 'table': muliplicationTable(operand1); break;
 };
 
- function addition(){
-     let sum = operand1 + operand2;
-     alert('Sum = ' + sum);
+ function addition(operand1,operand2){
+    return operand1 + operand2;  
  };
 
- function subtraction(){
-     let dif = operand1 - operand2;
-     alert('Difference = ' + dif);
+ function subtraction(operand1,operand2){
+     return operand1 - operand2;
  };
 
- function multiplication(){
-     let product = operand1 * operand2;
-     alert('Product = ' + product);
+ function multiplication(operand1,operand2){
+    return operand1 * operand2;
  };
 
- function division(){
-     let quotient = operand1 / operand2;
-     alert('Quotient = ' + quotient);
+ function division(operand1,operand2){
+    return operand1 / operand2;
  };
+
+ function muliplicationTable(){
+    
+ };
+
+ alert('Result: ' + result)
  
