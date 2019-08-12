@@ -16,14 +16,8 @@ do {
         operator !='div'
         )
 
-do{
-     operand1 = +prompt('Ener first operand:');
-}while (isNaN(operand1));
-
-do{
-    operand2 = +prompt('Ener second operand:');
-}while (isNaN(operand2));
-
+operand1 = getOperand(1);
+operand2 = getOperand(2);
 
 switch(operator){
     case 'add': addition(operand1,operand2);break;
@@ -31,6 +25,15 @@ switch(operator){
     case 'mult': multiplication(operand1,operand2);break;
     case 'div': division(operand1,operand2); break;
     case 'table': muliplicationTable(operand1); break;
+};
+
+function getOperand(operandIndex){
+    let operand;
+    do{
+        operand = +prompt('Ener ' + operandIndex + 'operand:');
+   }while (isNaN(operand));
+
+   return operand;
 };
 
  function addition(operand1,operand2){
