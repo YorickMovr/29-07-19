@@ -1,9 +1,22 @@
+let output = '';
 function replaceAll(string, char, replacer) {
-    while(char.length > 1 || replacer.length > 1){
-        alert ('Please check the values ​​of char and replacer, they should consist only one simbol each')
+    for (let i = 0; i < string.length; i++){
+        let outputSign = string[i];
+        if (outputSign == 'l'){
+            output += 'z';
+        }else {
+            output += outputSign;
+        };
     };
-    return string.split(char).join(replacer); 
+    
+    do {
+        alert ('Please check the values ​​of char and replacer, they should consist only one simbol each')
+    } while(char.length > 1 || replacer.length > 1);
+    // return string.split(char).join(replacer); 
+    return output;
+
   };
 
-  let str = replaceAll('hello world!', 'll', 'z');
+  let str = replaceAll('hello world!', 'l', 'z');
+  
   alert(str);
