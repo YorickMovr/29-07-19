@@ -15,7 +15,7 @@ ul {
     background: #eee;
     font-size: 18px;
     transition: 0.2s;
-}
+}   
 
 ul li.checked {
     background: #008000;
