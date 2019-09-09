@@ -19,7 +19,7 @@ input.addEventListener("keypress", (keyPressed) => {
     }
 })
 
-
+ 
 function newElement() {
     let li = document.createElement('li');
     let inputValue = document.getElementById('toDoEl').value;
