@@ -39,5 +39,15 @@ const studentsGroup = [
 
 // function ck (students){
 // alert(students[0].averegeMarkForSt());
-// }
+// }----------------------------------------------------------------------------------------------------------------
+// function getArrayItemsSum(arr){
+//     return arr.reduce((sum,current) => sum + current,0)
+// };
+// function averegeMarkForGroup(students){
+//     const total = students.reduce((sum, student) => sum + student);
+
+//     return total/students.length;    
+// }=================================================================================================================
+
+
 
