@@ -17,12 +17,11 @@ function Student(name, marks){
 };     
 
 Student.prototype.averegeMarkForSt = function(){
-    return this.marks.reduce((prev, mark) => prev + mark,0)/this.marks.length;
+    return this.marks.reduce((prev, mark) => 
+    prev + mark,0)/this.marks.length;
 }
 
-function averegeMarkForGroup(students   ){
 
-}
 
 
 const st1 =new Student('Student 1', [10,9,8,0,10]);
