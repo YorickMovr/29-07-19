@@ -1,0 +1,7 @@
+.clickable-element{
+    background-color: blue;
+}
+
+.clickable-element-cklicked{
+    background-color: red;
+}
