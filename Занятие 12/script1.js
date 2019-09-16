@@ -2,9 +2,9 @@ function Animal(name, speed){
     this.name = name;
     this.speed = speed;
 
-    ANIMAL.HIGH_SPEED = '100%';
+    Animal.HIGH_SPEED = '100%';
 
-    ANIMAL.LOW_SPEED = '10%';
+    Animal.LOW_SPEED = '10%';
 }
 
 
@@ -25,9 +25,6 @@ Cat.HIGH_SPEED = 'High'
 const raptor = new Animal('Raptor',Animal.HIGH_SPEED);
 const dino1 = new Animal('Dinozaur', Animal.LOW_SPEED);
 const raptor1 = new Animal('Raptor',Animal.HIGH_SPEED);
-const dino1 = new Animal('Dinozaur', Animal.LOW_SPEED);
-const dino = new Animal('Dinozaur', Animal.LOW_SPEED);
-const raptor1 = new Animal('Raptor',Animal.HIGH_SPEED);
 
 
-const barsik = new Cat( 'Barsik', CAT.HIGH_SPEED)
+const barsik = new Cat( 'Barsik', Cat.HIGH_SPEED)
