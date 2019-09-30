@@ -1,0 +1,28 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+#slides{
+    width: 80%;
+    margin-left: 20%;
+}
+
+#container{
+    width :90%;
+    float: left;
+}
+.slide{
+    position: absolute;
+}
+.slide img{
+    width: 50%;
+}
+.bottoms{
+    float: left;
+    width: 4%;
+    
+}
+li {
+    list-style-type: none; 
+   }
