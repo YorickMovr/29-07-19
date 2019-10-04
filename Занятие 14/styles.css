@@ -16,6 +16,5 @@
 
 }
 .my-accordeon-container .active .title{
-    display: block;
     background-color: lightgray;
 }
