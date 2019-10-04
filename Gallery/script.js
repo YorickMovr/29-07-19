@@ -31,7 +31,9 @@ Gallery.prototype.doSlider = function(){
         document.querySelector('#slides').appendChild(img);
         step++;
     }
-    draw();draw()
+    
+var slideInterval = setInterval(draw,2000);
+    
 }
 
 
