@@ -39,16 +39,20 @@ function newContact(){
     tr.appendChild(td3);
     tr.appendChild(td4);
 
-        if(!isFinite(number)){
-            alert('Используйте цифры')
+        if(name ==""||surname == ""){
+            alert('Проверьте введенные данные')
+        }else if(!isFinite(number)||number == ""){
+            alert('Проверьте номер еще раз')}
+         else {
+            document.getElementById('table').appendChild(tr);
         }
 
-    document.getElementById('table').appendChild(tr);
+    
 
     document.getElementById('name').value = '';
     document.getElementById('surname').value = '';
     document.getElementById('number').value = '';
 
-    console.log(td1,td2,td3,td4)
+    // console.log(td1,td2,td3,td4)
 
 }
