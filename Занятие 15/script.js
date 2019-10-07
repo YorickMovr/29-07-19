@@ -52,30 +52,3 @@ function newContact(){
     console.log(td1,td2,td3,td4)
 
 }
-
-
-
-
-
-
-
-
-
-
-function sdsdlement() {
-    var li = document.createElement('li');
-    var inputValue = document.getElementById('toDoEl').value;
-    var t = document.createTextNode(inputValue);
-    li.appendChild(t);
-    if(inputValue == "") {
-       alert("Введите ваше дело!");
-    } else {
-       document.getElementById('list').appendChild(li);
-    }
-    document.getElementById('toDoEl').value = "";
-    var span = document.createElement('SPAN');
-    var txt = document.createTextNode("X");
-    span.className = "close";
-    span.appendChild(txt);
-    li.appendChild(span);
-}
