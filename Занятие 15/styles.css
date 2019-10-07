@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+}
+.wrapper {width: 920px; margin: 0 auto}
+
+table{
+    width:920px;
+    margin: 0 auto;
+}
+.close {
+    
+    width: 100%;
+    position: relative;
+    padding: 0px 0px 8px 7px;
+    margin-bottom: 200px;
+}
+
+.close:hover {
+    background-color: #f44336;
+    color: white;
+}
+.addBtn {
+    padding: 15px;
+    width: 100%;
+    background: #d9d9d9;
+    color: #555;
+    float: left;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.addBtn:hover {
+    background-color: #bbb;
+}
+
+.header {
+    background-color: #bbb1bb;
+    padding: 30px 40px;
+    color: white;
+    text-align: center;
+}
+
+.header:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
