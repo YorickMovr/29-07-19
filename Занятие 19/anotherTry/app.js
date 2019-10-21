@@ -40,7 +40,7 @@ function goToPage(){
     position = document.getElementById('position').value
     sessionStorage.setItem('position', position)
     console.log(position)
-    // location.reload()
+    location.reload()
     })
 }
 
