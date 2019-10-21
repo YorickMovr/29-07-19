@@ -34,9 +34,13 @@ function makeMoreArrs(arr){
 }
 
 function goToPage(){
+    
+    document.getElementById('btn').addEventListener('click',()=>{
     position = document.getElementById('position').value
     sessionStorage.setItem('position', position)
     console.log(position)
+    location.reload()
+    })
 }
 
 function showPics(arr){
