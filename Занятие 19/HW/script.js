@@ -36,7 +36,7 @@ function renderGaleryItems(list){
                                     .replace('{{title}}', elem.title)
                                     .replace('{{fullImageUrl}}', elem.url);
     });
-    gallery.innerHTML = imagesHtml.join('\n');
+    galleryItemTemplate.innerHTML = imagesHtml.join('\n');
 
 }
 
