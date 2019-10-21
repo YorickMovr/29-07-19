@@ -10,6 +10,7 @@ request.send()
 request.onload = function () {
     let arr = request.response;
     usingArr = makeMoreArrs(arr)
+    sessionStorage.setItem('position', 0);
 
     showPics(usingArr)
     showFull(usingArr)
@@ -39,7 +40,7 @@ function goToPage(){
     position = document.getElementById('position').value
     sessionStorage.setItem('position', position)
     console.log(position)
-    location.reload()
+    // location.reload()
     })
 }
 
