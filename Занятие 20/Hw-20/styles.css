@@ -30,6 +30,8 @@ body {
     min-width: 100px;
     background: transparent;
     border: none;
+
+    background-color: lightgray;
   }
   
   .sticker .bar:hover {
@@ -42,6 +44,11 @@ body {
   }
   
   .addNoteBtn {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
     color: white;
     font-size: 20px;
     border-radius: 2px;
