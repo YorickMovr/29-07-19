@@ -1,4 +1,3 @@
-// (function () {
 'use strict';
     
 let draggedEl,
@@ -172,6 +171,4 @@ let init = function () {
       document.addEventListener('mouseup', onDragEnd, false);
 };
     
-    init();
-    
-//   })();
+init();
