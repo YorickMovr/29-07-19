@@ -1,12 +1,7 @@
-// Client ID:      afd24306b898824320f5
-// Client Secret:  f0bff7d2dd43f4c6335444af63a3eca2f90a4654
-
-
 $(document).ready(function(){
 
     $('#searchUser').on('keyup', function(e){
         let username = e.target.value;
-        // console.log(username);
         $.ajax({
             url: 'https://api.github.com/users/'+username,
             data: {
